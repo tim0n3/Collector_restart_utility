@@ -1,0 +1,11 @@
+[Unit]
+Description=Run data_restart_script every half an hour after datacollector.service
+
+[Timer]
+OnUnitActiveSec=datacollector.service
+OnBootSec=30m
+Unit=data_restart_script.service
+
+[Install]
+WantedBy=timers.target
+

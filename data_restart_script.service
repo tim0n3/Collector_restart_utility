@@ -1,0 +1,10 @@
+[Unit]
+Description=My Script to restart datacollector
+
+[Service]
+Type=simple
+ExecStart=/root/restart_script.sh
+
+[Install]
+WantedBy=multi-user.target
+
